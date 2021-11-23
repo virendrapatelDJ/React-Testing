@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 
 export default function TodoForm({ onCreate }) {
   const [text, setText] = useState('');
+  console.log({ text });
   const handleSubmit = (event) => {
     event.preventDefault();
     onCreate(text);
